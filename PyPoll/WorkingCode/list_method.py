@@ -1,9 +1,3 @@
-#UofMN Data Analytics Bootcamp
-#Homework 2 PyPoll final solution
-#Created by Chris Howard
-#03/16/2019
-
-
 import os
 import csv
 from operator import itemgetter
@@ -85,3 +79,8 @@ with open(output_path, 'w') as txtfile:
     txtfile.write("-------------------\n")
     txtfile.write(f"Winner: {resultsSorted[0][0]}\n")
     txtfile.write("-------------------\n")
+ 
+
+
+
+
