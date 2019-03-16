@@ -66,7 +66,7 @@ print("-------------------")
 print(f"Total Votes: {len(votes)}")
 print("-------------------")
 for result in resultsSorted:
-    print(f"{result[0]}:   {round(result[2]*100, 3)}% ({result[1]})")
+    print(f"{result[0]}:     \t{round(result[2]*100, 3)}% ({result[1]})")
 print("-------------------")
 print(f"Winner: {resultsSorted[0][0]}")
 print("-------------------")
@@ -81,7 +81,7 @@ with open(output_path, 'w') as txtfile:
     txtfile.write(f"Total Votes: {len(votes)}\n")
     txtfile.write("-------------------\n")
     for result in resultsSorted:
-        txtfile.write(f"{result[0]}:   {round(result[2]*100, 3)}% ({result[1]})\n")
+        txtfile.write(f"{result[0]}:     \t{round(result[2]*100, 3)}% ({result[1]})\n")
     txtfile.write("-------------------\n")
     txtfile.write(f"Winner: {resultsSorted[0][0]}\n")
     txtfile.write("-------------------\n")
